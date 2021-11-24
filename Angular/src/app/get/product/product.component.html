@@ -1,0 +1,15 @@
+<div >
+  <table *ngIf="products">
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let product of products">
+      <th>{{product.name}}</th>
+      <th>{{product.quantity}}</th>
+      <th>{{product.price}}</th>
+    </tr>
+  </table>
+  <div class="card" *ngIf="!products">No product is founded</div>
+</div>

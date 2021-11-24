@@ -1,0 +1,14 @@
+
+  <table class="table" style="margin: 50px" *ngIf="suppliers">
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let s of suppliers">
+      <td>{{s.id}}</td>
+      <td>{{s.name}}</td>
+      <td>{{s.email}}</td>
+    </tr>
+  </table>
+  <div class="card" *ngIf="!suppliers">No product is founded</div>  
